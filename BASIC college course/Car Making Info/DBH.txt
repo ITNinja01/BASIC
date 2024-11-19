@@ -1,0 +1,29 @@
+"Michigan", "Lansing", "wheels", "Ford", 70
+"Michigan", "Lansing", "wheels", "Dodge", 57
+"Michigan", "Lansing", "wheels", "Chevy", 33
+"Michigan", "Lansing", "wiper blades", "Dodge", 40
+"Michigan", "Lansing", "wiper blades", "Ford", 62
+"Michigan", "Lansing", "wiper blades", "Chevy", 29
+"Michigan", "Lansing", "fuel pumps", "Chevy", 20
+"Michigan", "Lansing", "fuel pumps", "Ford", 35
+"Michigan", "Detroit", "wiper blades", "Chevy", 57
+"Michigan", "Detroit", "wiper blades", "Dodge", 82
+"Michigan", "Detroit", "wiper blades", "Ford", 39
+"Michigan", "Grand Rapids", "fuel pumps", "Dodge", 85
+"Michigan", "Grand Rapids", "fuel pumps", "Ford", 150
+"Michigan", "Grand Rapids", "fuel pumps", "Chevy", 72
+"Michigan", "Grand Rapids", "wheels", "Chevy", 76
+"Indiana", "South Bend", "carburetor", "Ford	", 23
+"Indiana", "South Bend", "carburetor", "Dodge", 90
+"Indiana", "South Bend", "carburetor", "Chevy", 123
+"Indiana", "South Bend", "fuel pumps", "Chevy", 26
+"Indiana", "South Bend", "fuel pumps", "Dodge", 101
+"Indiana", "South Bend", "fuel pumps", "Ford", 68
+"Indiana", "South Bend", "fuel pumps", "Toyota", 73
+"Indiana", "Ft. Wayne", "carburetor", "Toyota", 46
+"Indiana", "Ft. Wayne", "carburetor", "Chevy", 95
+"Indiana", "Ft. Wayne", "carburetor", "Dodge", 54
+"Indiana", "Ft. Wayne", "carburetor", "Ford", 33
+"Indiana", "Ft. Wayne", "wiper blades", "Dodge", 202
+"Indiana", "Ft. Wayne", "wiper blades", "Chevy", 117
+"Indiana", "Ft. Wayne", "wiper blades", "Ford", 79
