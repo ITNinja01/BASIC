@@ -5,13 +5,13 @@
 20 get a$: if a$ = "" then 20
 30 if a$ <> "f" then 100
 40 if a$ <> "c" then 50
-50 input "enter degresses celsius:";c
+50 input "enter degrees celsius:";c
 60 f = (c*9)/5+32
-70 print c;" degresses celsius = "; f;"degresses fahrenheit"
+70 print c;" degrees celsius = "; f;"degrees fahrenheit"
 80 print
 90 end
-100 input "enter degress in fahrenheit:";f
+100 input "enter degrees in fahrenheit:";f
 110 c = (f-32)*5/9
-120 print f;"degresses fahrenheit ="; c;"degresses celsius"
+120 print f;"degrees fahrenheit ="; c;"degrees celsius"
 130 print 
 140 end
