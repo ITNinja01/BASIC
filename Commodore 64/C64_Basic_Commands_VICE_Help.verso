@@ -1,0 +1,228 @@
+{
+  "verso": "1.1",
+  "metadata": {
+    "defaultKernel": "basic",
+    "activeLayout": {
+      "extensionId": "verso.layout.notebook",
+      "layoutId": "notebook"
+    }
+  },
+  "cells": [
+    {
+      "id": "cbd5bed0-af6b-47f5-b24d-3bff65587792",
+      "type": "markdown",
+      "source": "# Top Commodore 64 BASIC V2 Commands and VICE Help\nA categorized reference notebook with runnable examples and information"
+    },
+    {
+      "id": "3ae47779-3acb-4513-a88d-07332d0aae56",
+      "type": "markdown",
+      "source": "## Program Control"
+    },
+    {
+      "id": "97f29fb8-f40e-41fb-aee2-f4a739c4cf5f",
+      "type": "code",
+      "language": "basic",
+      "source": "REM RUN \u2013 Start program\nREM LIST \u2013 Show program listing\nREM NEW \u2013 Clear program from memory\nREM CONT \u2013 Continue after STOP\nREM STOP \u2013 Halt program execution"
+    },
+    {
+      "id": "9dcdb485-3f17-408b-a748-1e56fb2283c7",
+      "type": "markdown",
+      "source": "### Examples"
+    },
+    {
+      "id": "436e58e1-f96d-48f0-b7e8-42edf03f15b8",
+      "type": "code",
+      "language": "basic",
+      "source": "10 PRINT \u0022HELLO WORLD\u0022\n20 GOTO 10"
+    },
+    {
+      "id": "6ba731db-d5bd-46ed-9745-56d8628f971d",
+      "type": "markdown",
+      "source": "## Input/Output"
+    },
+    {
+      "id": "06e1c9f8-1bca-4ffc-809c-84a46300e7fa",
+      "type": "code",
+      "language": "basic",
+      "source": "REM PRINT \u2013 Output text or numbers\nREM INPUT \u2013 Ask user for input\nREM GET \u2013 Get single character from keyboard\nREM POKE \u2013 Write value to memory address\nREM PEEK \u2013 Read value from memory address\nREM OPEN \u2013 Open file or device\nREM CLOSE \u2013 Close file or device"
+    },
+    {
+      "id": "71e29249-878b-4a91-86eb-6acf67e329d8",
+      "type": "markdown",
+      "source": "### Examples"
+    },
+    {
+      "id": "69ff554e-e524-4d2c-a27e-4950b9b1eced",
+      "type": "code",
+      "language": "basic",
+      "source": "10 GET A$\n20 IF A$=\u0022\u0022 THEN 10\n30 PRINT \u0022YOU PRESSED \u0022;A$"
+    },
+    {
+      "id": "fc6d7e1a-5e80-4aae-b058-2046ddd52fa1",
+      "type": "markdown",
+      "source": "## Math \u0026 Logic"
+    },
+    {
+      "id": "05e8070f-754f-4231-a9ac-244f27ecabd0",
+      "type": "code",
+      "language": "basic",
+      "source": "REM ABS \u2013 Absolute value\nREM INT \u2013 Integer part\nREM RND \u2013 Random number\nREM SGN \u2013 Sign of number\nREM AND \u2013 Logical AND\nREM OR \u2013 Logical OR\nREM NOT \u2013 Logical NOT"
+    },
+    {
+      "id": "161ca4a8-32bc-41b9-b0ba-a4f3e5c0aa9a",
+      "type": "markdown",
+      "source": "### Examples"
+    },
+    {
+      "id": "cba0ce7e-4ccd-488c-9f48-96913705fd6b",
+      "type": "code",
+      "language": "basic",
+      "source": "10 PRINT ABS(-42)"
+    },
+    {
+      "id": "c096494d-6774-4dfe-a4c5-cdb28a226100",
+      "type": "code",
+      "language": "basic",
+      "source": "10 PRINT INT(3.9)"
+    },
+    {
+      "id": "3651c6fa-66b7-443b-b050-687aa93f9a9f",
+      "type": "code",
+      "language": "basic",
+      "source": "10 PRINT RND(1)"
+    },
+    {
+      "id": "4cb5e5d9-3b55-4a21-83e7-fec403056746",
+      "type": "markdown",
+      "source": "## Program Flow"
+    },
+    {
+      "id": "32844686-7baa-4adf-b57e-d9262602fcfa",
+      "type": "code",
+      "language": "basic",
+      "source": "REM GOTO \u2013 Jump to line\nREM GOSUB \u2013 Call subroutine\nREM RETURN \u2013 Return from subroutine\nREM FOR\u2026NEXT \u2013 Loop structure\nREM IF\u2026THEN \u2013 Conditional execution"
+    },
+    {
+      "id": "316dbff1-9c26-4187-8805-581bf88e0b0f",
+      "type": "markdown",
+      "source": "### Examples"
+    },
+    {
+      "id": "ee315094-e2ff-46e6-9877-30d1f61bf3fb",
+      "type": "code",
+      "language": "basic",
+      "source": "10 FOR I=1 TO 10\n20 PRINT I\n30 NEXT I"
+    },
+    {
+      "id": "f58a0c3c-659f-4e61-9723-fa8678cd2a59",
+      "type": "code",
+      "language": "basic",
+      "source": "10 IF 5\u003E3 THEN PRINT \u0022YES\u0022"
+    },
+    {
+      "id": "f4cb62e8-64ab-494e-ad58-edbea6a9cc72",
+      "type": "markdown",
+      "source": "## Graphics \u0026 Sound"
+    },
+    {
+      "id": "6297803f-91ed-4684-b786-b7c7af77e7ca",
+      "type": "code",
+      "language": "basic",
+      "source": "REM POKE 53280,x \u2013 Set border color\nREM POKE 53281,x \u2013 Set background color\nREM POKE 53272,x \u2013 Screen control\nREM POKE 54296,x \u2013 Sound control\nREM POKE 54273,x \u2013 Voice frequency low byte"
+    },
+    {
+      "id": "7a2e643a-4cae-40c7-86c0-76998aea48da",
+      "type": "markdown",
+      "source": "### Examples"
+    },
+    {
+      "id": "decec192-c9b0-4886-b553-467764d842eb",
+      "type": "code",
+      "language": "basic",
+      "source": "10 POKE 53280,0 : REM BORDER TO BLACK"
+    },
+    {
+      "id": "88190768-9646-4d99-a889-9769beb5dd02",
+      "type": "code",
+      "language": "basic",
+      "source": "20 POKE 53281,6 : REM BACKGROUND TO BLUE"
+    },
+    {
+      "id": "634a15f7-07bb-4cb9-abf0-789cd8aa77c6",
+      "type": "markdown",
+      "source": "## System \u0026 Memory"
+    },
+    {
+      "id": "c320cd99-5844-43f9-94c6-6f2b68030e7c",
+      "type": "code",
+      "language": "basic",
+      "source": "REM SYS \u2013 Call machine code routine\nREM LOAD \u2013 Load program/data\nREM SAVE \u2013 Save program/data\nREM POKE \u2013 Change memory directly\nREM PEEK \u2013 Inspect memory directly"
+    },
+    {
+      "id": "2bdf5a18-9cda-4b6b-a78f-ac20e51fa54a",
+      "type": "markdown",
+      "source": "### Examples"
+    },
+    {
+      "id": "4c392075-b8d8-4717-ae06-5ff00fe85c4b",
+      "type": "code",
+      "language": "basic",
+      "source": "10 PRINT PEEK(1024)"
+    },
+    {
+      "id": "fb49e16b-7884-4377-9153-29140a5d04b3",
+      "type": "code",
+      "language": "basic",
+      "source": "10 SYS 64738 : REM RESET C64"
+    },
+    {
+      "id": "228bdb52-ce26-4ca2-bd6b-c63056e46bbb",
+      "type": "markdown",
+      "source": "## Useful Disk Commands\n[C64 Disk Commands - Wiki ](https://www.c64-wiki.com/wiki/Drive_command)\n"
+    },
+    {
+      "id": "1268cb57-63be-4f1e-857c-b47304815bc3",
+      "type": "code",
+      "language": "basic",
+      "source": "Load \u0022program name\u0022 , 8 \nLoad \u0022*\u0022 , 8\nLoad\u0022$\u0022 ,8\nSave \u0022Program Name\u0022, 8\n"
+    },
+    {
+      "id": "4f60364b-3f9a-4043-8917-3673d73dcb94",
+      "type": "code",
+      "language": "basic",
+      "source": "REM Erases what is in memory    \nNew"
+    },
+    {
+      "id": "922a0691-1625-4dac-a15f-78cc63b95cd9",
+      "type": "markdown",
+      "source": "REM Clears the screen\nPRINT CHR$(147)"
+    },
+    {
+      "id": "417eeef6-32cc-481e-be93-39c1cb7e4336",
+      "type": "code",
+      "language": "basic",
+      "source": "REM Deletes a file!\nOPEN 1,8,15,\u0022S:TEMPFILE\u0022:CLOSE 1 \n"
+    },
+    {
+      "id": "f769bc52-9d0f-435c-a03e-b3382675bc92",
+      "type": "code",
+      "language": "basic",
+      "source": "REM See what is in memeory\nLIST    \nPRINT \u0022MEMORY FREE\u0022; FRE(0)"
+    },
+    {
+      "id": "5a702e4b-67ee-4426-8db2-d2ee5d9c5a54",
+      "type": "markdown",
+      "source": "## VICE Keyboard on a QWERTY keyboard.\n**BASIC\\bin\\VICE_Keyboard.gif**\n"
+    },
+    {
+      "id": "c11868bf-bacf-42a7-8b3b-a0447e8acaa8",
+      "type": "markdown",
+      "source": "## Found this forum useful when troubleshooting joy stick issues in VICE.\n### VICE and keyboard - Where is fire button?\nModerator: Lemoners\n\n6 posts \u2022 Page 1 of 1\njoe64\nPosts: 5\nJoined: Tue May 24, 2016 8:26 am\nVICE and keyboard - Where is fire button?\nPost by joe64 \u00BB Tue May 24, 2016 6:02 pm\n\nI was searching for an old overhead car racing game and thanks to your help I found its name: it was \u0022Super Cars\u0022.\nI installed VICE emulator on my Linux system and I found also a \u0022.d64\u0022 file of that game. I can boot and load that game, but I can\u0027t start it (maybe due to my keyboard mapping).\nI suspect \u0022Fire\u0022 button is not well mapped.\n\nMy keyboard, is a standard keyboard \u0022qwerty\u0022 with italian layout.. nothing special. I\u0027d like to be able to give a try at that old game using my PC with Linux and just my keyboard. No joystick nor game-pad...\n\nI\u0027d also try an other file .d64, related to an other game \u0022Green Berret\u0022.\nThe game is loaded correctly, the I press space and it run, it ask if I want infinite ammo and \u0022Y\u0022 or \u0022N\u0022 keys work fine.\nBut finally when \u0022press fire button to start\u0022 appears, I can\u0027t find a \u0022Fire\u0022 button on my keyboard. I tried Right-CTRL, but the game doesn\u0027t begin...\n\nHave you any suggests on configuration of VICE and key mapping... if that is the problem?\nTop\ntfg\nZorro\nZorro\nPosts: 1274\nJoined: Wed Jan 02, 2008 8:40 pm\nLocation: synaptic wastelands\nAge: 52\nPost by tfg \u00BB Tue May 24, 2016 6:43 pm\n\nIf you want to use the keyboard to emulate a joystick you first have to set it up under settings-\u003Ejoystick settings. Most games expect the joystick in port #2, so this should be the one to assign a keyset to. In the rare case a game expects it in port #1 you can swap the ports on the fly with ALT\u002BJ.\nIf it looks like a duck, swims like a duck, and quacks like a duck the chicken is obviously trolling you.\nTop\njoe64\nPosts: 5\nJoined: Tue May 24, 2016 8:26 am\nPost by joe64 \u00BB Tue May 24, 2016 7:11 pm\n\nThank you, I tried following steps:\n\n- joystick setup\n- port 1\n- keyset A\n\n- joystick setup\n- port 2\n- keyset B\n\n- allow joystick keyset\n\ndefine keyset:\n- keyset 1: north-up, east-right, south-down, west-left, fire-ctrl_right\n- keyset 2: north-up, east-right, south-down, west-left, fire-ctrl_right\n\nBut when I press Fire button, nothing starts...\nTop\ntfg\nZorro\nZorro\nPosts: 1274\nJoined: Wed Jan 02, 2008 8:40 pm\nLocation: synaptic wastelands\nAge: 52\nPost by tfg \u00BB Tue May 24, 2016 7:14 pm\n\nIIRC Vice doesn\u0027t like it when the same keys are assigned to both joysticks, try to set port 1 to \u0022none\u0022 and see if that helps.\nIf it looks like a duck, swims like a duck, and quacks like a duck the chicken is obviously trolling you.\nTop\ndonlw3rd\nJack The Nipper\nJack The Nipper\nPosts: 600\nJoined: Tue Feb 21, 2012 7:02 pm\nPost by donlw3rd \u00BB Tue May 24, 2016 8:43 pm\n\nno need to set the same keys to ports ports. you can swap joysticks using \u0022ALT \u002BJ\u0022\nTop\njoe64\nPosts: 5\nJoined: Tue May 24, 2016 8:26 am\nPost by joe64 \u00BB Wed May 25, 2016 8:16 am\n\nYour suggest solved the problem!\n\nThanks a lot!\nBye"
+    },
+    {
+      "id": "446c1fde-1291-46c6-8bf9-bda8b2b8d815",
+      "type": "markdown",
+      "source": "## VS Code with BASIC/VICE\n*When creating code in VS Code all code should be lowercase for when copying into VICE, it will be in the correct simple text."
+    }
+  ]
+}
