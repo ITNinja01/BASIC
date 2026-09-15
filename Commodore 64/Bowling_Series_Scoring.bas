@@ -17,4 +17,11 @@
 90 print 2;tab(10);g2
 100 print 3;tab(10);g3
 110 print "total";tab(10);t
-120 print "average";tab(10);av
+120 print "average";tab(10);av 
+130 rem saving the data to a file
+131 open 1,8,2,"bowling.dat,s,w"
+132 print#1,week
+133 print#1,g1
+134 print#1,g2
+135 print#1,g3
+136 close 1
